@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harshita bajpai</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+
+    
+   <!-- navbar starts -->
+   <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar-brand,
+    .nav-link,
+    .nav-menu {
+      transition: color 0.3s ease;
+    }
+
+    .nav-link,
+    .navbar-brand {
+      color: #3f396d;
+    }
+
+    .custom-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: linear-gradient(135deg, #1c1c1c, #3f396d); /* Dark blue ombre */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .custom-btn:hover {
+    background: linear-gradient(135deg, #3f396d, #1c1c1c); /* Reverse the ombre on hover */
+    transform: scale(1.05);
+  }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar-top" class="navbar navbar-expand-lg sticky-top" style="background-color: rgba(255,255,255,1);">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-2" href="#">Harshita Bajpai</a>
+      <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        style="color: #3f396d; border: none; background: none;">
+        <i class="bi bi-menu-button-fill"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem;">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificate">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+<!-- navbar ends here -->
+
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home"
+    style="background: linear-gradient(to right, #2e2b4f, #1c1b2f); color: white;">
+    <div class="row justify-content-evenly align-middle">
+      <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+        <h2>
+          Hello! I Am <br /><span class="c-orange">Harshita Bajpai</span>
+        </h2>
+        <p class="text-light">
+          I am a Full Stack Web Development student with hands-on experience in building dynamic and responsive web applications using the MERN stack and other modern technologies.
+          I enjoy creating efficient, user-friendly solutions and continuously expanding my development skills.
+        </p>
+        <a href="https://www.linkedin.com/in/harshitabajpai1226/" target="_blank" style="text-decoration: none;">
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" style="background-color: #fff; color: #3f396d;">
+            Let's Connect
+          </button>
+        </a>
+  
+        <a href="" class="link ms-4 d-none">See My Work</a>
+      </div>
+  
+      <div class="col-10 col-md-4 d-none d-md-block">
+        <img src="images/harshita_photo.jpg" class="img-fluid rounded shadow" style="max-width: 250px;" alt="Harshita Bajpai Photo" />
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+<!-- <section class="expertise mt-5" id="service">
+  <div class="heading text-center">
+    <small>My Expertise</small>
+    <h3>
+      Combining Data Science with <br />
+      Full Stack Development
+    </h3>
+  </div>
+  <div class="row justify-content-evenly mt-5"> -->
+    <!-- Full Stack Development -->
+    <!-- <div class="col-10 col-md-4" data-aos="fade-up">
+      <div class="service-card">
+        <div class="img">
+          <img
+            src="images/service-icon1.png"
+            class="w-25 img-fluid img"
+            alt="Full Stack Development Icon"
+          />
+        </div>
+        <div class="content mt-3">
+          <h4>Full Stack Development</h4>
+          <p class="text-muted">
+            Experience in building dynamic, secure, and responsive web apps using the MERN stack with REST APIs and JWT authentication.
+          </p>
+          <a href="#portfolio" class="link">See Projects</a>
+        </div>
+      </div>
+    </div>
+
+    Data Analytics
+    <div class="col-md-4 col-10" data-aos="fade-up">
+      <div class="service-card">
+        <div class="img">
+          <img
+            src="images/service-icon2.png"
+            class="w-25 img-fluid img"
+            alt="Data Analysis Icon"
+          />
+        </div>
+        <div class="content mt-3">
+          <h4>Data Analytics & Visualization</h4>
+          <p class="text-muted">
+            Skilled in deriving insights from data using Tableau, Excel, and SQL, and crafting dashboards that drive decisions.
+          </p>
+          <a href="#portfolio" class="link">See Dashboards</a>
+        </div>
+      </div>
+    </div>
+
+    Machine Learning -->
+    <!-- <div class="col-md-4 col-10" data-aos="fade-up">
+      <div class="service-card">
+        <div class="img">
+          <img
+            src="images/service-icon3.png"
+            class="w-25 img-fluid img"
+            alt="Machine Learning Icon"
+          />
+        </div>
+        <div class="content mt-3">
+          <h4>Machine Learning</h4>
+          <p class="text-muted">
+            Applied ML algorithms for real-world problems like diabetes prediction using R, caret, and visualization libraries.
+          </p>
+          <a href="#portfolio/Diabetes-Predictor" class="link">See ML Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- expertise section ends here -->
+
+
+ <!-- about me section starts -->
+<section class="about mt-5 py-5" id="about">
+  <div class="row justify-content-evenly">
+    
+    <!-- Skills Icons Grid -->
+    <div class="col-10 col-md-5 skill-with-icons" data-aos="slide-right">
+      <div class="row justify-content-evenly">
+        
+        <!-- Skill: C++ -->
+        <div class="col-10 col-md-6">
+          <div class="icon-card text-center bg-white p-4 rounded shadow-sm mb-4">
+            <img src="images/c++.png" alt="C++ Icon" class="mb-3" width="40">
+            <span class="text">C++</span>
+          </div>
+        </div>
+
+        <!-- Skill: Java -->
+        <div class="col-10 col-md-6">
+          <div class="icon-card text-center bg-white p-4 rounded shadow-sm mb-4">
+            <img src="images/java.svg" alt="Java Icon" class="mb-3" width="40">
+            <span class="text">Java</span>
+          </div>
+        </div>
+
+        <!-- Skill: R -->
+        <div class="col-10 col-md-6">
+          <div class="icon-card text-center bg-white p-4 rounded shadow-sm mb-4">
+            <img src="images/python.png" alt="R Icon" class="mb-3" width="40">
+            <span class="text">Python</span>
+          </div>
+        </div>
+
+        <!-- Skill: SQL -->
+        <!-- <div class="col-10 col-md-6">
+          <div class="icon-card text-center bg-white p-4 rounded shadow-sm mb-4">
+            <img src="images/sql.png" alt="SQL Icon" class="mb-3" width="40">
+            <span class="text">SQL</span>
+          </div>
+        </div> -->
+
+        <!-- Skill: HTML -->
+        <div class="col-10 col-md-6">
+          <div class="icon-card text-center bg-white p-4 rounded shadow-sm mb-4">
+            <img src="images/html.png" alt="HTML Icon" class="mb-3" width="40">
+            <span class="text">HTML</span>
+          </div>
+        </div>
+
+        <!-- Skill: CSS -->
+        <div class="col-10 col-md-6">
+          <div class="icon-card text-center bg-white p-4 rounded shadow-sm mb-4">
+            <img src="images/css.png" alt="CSS Icon" class="mb-3" width="40">
+            <span class="text">CSS</span>
+          </div>
+        </div>
+
+        <!-- Skill: ReactJS -->
+        <div class="col-10 col-md-6">
+          <div class="icon-card text-center bg-white p-4 rounded shadow-sm mb-4">
+            <img src="images/React.webp" alt="ReactJS Icon" class="mb-3" width="40">
+            <span class="text">ReactJS</span>
+          </div>
+        </div>
+
+        <!-- Skill: Hadoop -->
+        <div class="col-10 col-md-6">
+          <div class="icon-card text-center bg-white p-4 rounded shadow-sm mb-4">
+            <img src="images/php.svg" alt="php Icon" class="mb-3" width="40">
+            <span class="text">PHP</span>
+          </div>
+        </div>
+
+        <!-- Skill: MongoDB -->
+        <div class="col-10 col-md-6">
+          <div class="icon-card text-center bg-white p-4 rounded shadow-sm mb-4">
+            <img src="images/mongodb.png" alt="MongoDB Icon" class="mb-3" width="40">
+            <span class="text">MongoDB</span>
+          </div>
+        </div>
+
+        <!-- Skill: Tableau
+        <div class="col-10 col-md-6">
+          <div class="icon-card text-center bg-white p-4 rounded shadow-sm mb-4">
+            <img src="images/tableau.png" alt="Tableau Icon" class="mb-3" width="40">
+            <span class="text">Tableau</span>
+          </div>
+        </div>
+
+        Skill: Linux -->
+        <!-- <div class="col-10 col-md-6">
+          <div class="icon-card text-center bg-white p-4 rounded shadow-sm mb-4">
+            <img src="images/linux.jpeg" alt="Linux Icon" class="mb-3" width="40">
+            <span class="text">Linux</span>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+
+    <!-- Right-side About Me description -->
+    <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+      <div class="heading mt-5 mt-md-3">
+        <small><b>About Me</b></small>
+        <h3>Turning Passion into Purpose through Technology</h3>
+        <p class="text-muted">
+          I’m <strong>Harshita Bajpai</strong>, a third-year B.Tech CSE student with a strong foundation in Full Stack Web Development. I specialize in building dynamic and scalable web applications using technologies like Java, C++, Python, React.js, Node.js, Express.js, MongoDB, MySQL, and PHP. My approach merges software development with data-driven insights to solve real-world problems.
+          <br><br>
+          Throughout my journey, I’ve successfully developed various full-stack web applications, from e-commerce platforms to blogging websites. I’m also passionate about continuous learning, keeping up with the latest trends in software development and algorithms. With strong problem-solving abilities, leadership experience, and a commitment to innovation, I aim to create impactful solutions that make a difference, particularly in the tech space. I believe in the power of collaboration and strive to contribute meaningfully to every project I work on.
+        </p>
+        
+        <button class="custom-btn">
+          <a href="harshita_cv_new[1][1].pdf" download="Harshita_Bajpai_Resume" style="text-decoration: none; color: #f1f1f1;">
+            Download CV
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- about me section ends here -->
+<!-- portfolio section starts here -->
+<section class="portfolio" id="portfolio">
+  <div class="heading text-center pt-5">
+    <!-- <small>Creative Work</small> -->
+    <h3>Check My Projects</h3>
+  </div>
+
+  <!-- <div id="myBtnContainer" class="text-center mt-4">
+    <button class="filter-item" data-filter="all">All</button>
+    <button class="filter-item" data-filter="game">Game</button>
+    <button class="filter-item" data-filter="website">Website</button>
+    <button class="filter-item" data-filter="dashboard">Dashboard</button>
+  </div> -->
+
+  <div class="portfolio-body">
+    <div class="row justify-content-evenly px-4">
+      
+      <!-- Blogging Website -->
+      <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/blogging.png" class="card-img-top" alt="Blogging Website" />
+          <div class="card-body text-center">
+            <h4 class="card-title">Blogging Website</h4>
+            <span class="badge bg-secondary badge-pill">MongoDB</span>
+            <span class="badge bg-secondary badge-pill">Express</span>
+            <span class="badge bg-secondary badge-pill">React</span>
+            <span class="badge bg-secondary badge-pill">Node.js</span>
+            <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
+            <p>A full-stack blogging platform where users can create, edit, and comment on blog posts with user authentication and a rich text editor.</p>
+            <a href="https://github.com/harshitabajpai1/blogging-website" class="custom-btn" target="_blank">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tic Tac Toe Game (Improved) -->
+      <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/tictactoe.png" class="card-img-top" alt="Tic Tac Toe" />
+          <div class="card-body text-center">
+            <h4 class="card-title">Tic Tac Toe </h4>
+            <span class="badge bg-secondary badge-pill">HTML & CSS</span>
+            <span class="badge bg-secondary badge-pill">JavaScript</span>
+            <span class="badge bg-secondary badge-pill mb-2">Game</span><br />
+            <p>An interactive and visually enhanced version of the classic Tic Tac Toe game, featuring an improved user interface and gameplay experience.</p>
+            <a href="https://harshita-tic-tac-toe.netlify.app/" class="custom-btn" target="_blank">Play it now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row justify-content-evenly mt-4 px-4">
+      
+      <!-- MA Creations (Saree Selling Website) -->
+      <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/ma_creations.png" class="card-img-top" alt="MA Creations" />
+          <div class="card-body text-center">
+            <h4 class="card-title">MA Creations</h4>
+            <span class="badge bg-secondary badge-pill">React</span>
+            <span class="badge bg-secondary badge-pill">Node.js</span>
+            <span class="badge bg-secondary badge-pill">MongoDB</span>
+            <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
+            <p>A responsive e-commerce website for selling sarees, with features like user authentication, product filtering, and an intuitive shopping cart.</p>
+            <a href="https://ma-creation.netlify.app/" class="custom-btn" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kitchen Garage -->
+      <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/kitchen_garage.png" class="card-img-top" alt="Kitchen Garage" />
+          <div class="card-body text-center">
+            <h4 class="card-title">Kitchen Garage</h4>
+            <span class="badge bg-secondary badge-pill">React</span>
+            <span class="badge bg-secondary badge-pill">Node.js</span>
+            <span class="badge bg-secondary badge-pill">MongoDB</span>
+            <span class="badge bg-secondary badge-pill mb-2">E-commerce</span><br />
+            <p>An online store offering kitchen accessories, featuring product details, an easy checkout process, and an admin panel for managing products.</p>
+            <a href="https://harshitabajpai1.github.io/kitchen-garage_KOC34_CipherSchools.github.io/" class="custom-btn" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+
+    </div>
+
+    
+  </div>
+
+  <div class="heading text-center pt-5" id="certificate">
+
+    <h3>Check My Certificates</h3>
+  </div>
+  <!-- Certificates Section -->
+<div class="portfolio-body">
+  <div class="row justify-content-evenly px-4">
+    
+    <!-- Software Testing Certificate -->
+    <div class="post col-md-4 certificate all col-10 mt-3 mt-md-0" data-aos="fade-up">
+      <div class="card">
+        <img src="images/nptel.png" class="card-img-top" alt="Software Testing Certificate" />
+        <div class="card-body text-center">
+          <h4 class="card-title">Software Testing (NPTEL)</h4>
+          <!-- <span class="badge bg-secondary badge-pill">Certification</span><br /> -->
+          <p>A certification in Software Testing from NPTEL, covering various testing methodologies and tools for quality assurance in software development.</p>
+          <a href="https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/106/noc24-cs91/Course/NPTEL24CS91S45690049804043793.pdf" class="custom-btn" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Node.js Certificate -->
+    <div class="post col-md-4 certificate all col-10 mt-3 mt-md-0" data-aos="fade-up">
+      <div class="card">
+        <img src="images/coursera.png" class="card-img-top" alt="Node.js Certificate" />
+        <div class="card-body text-center">
+          <h4 class="card-title">Node.js (Coursera)</h4>
+          <!-- <span class="badge bg-secondary badge-pill">Certification</span><br /> -->
+          <p>A certification in Node.js from Coursera, covering back-end development with Express and MongoDB, creating RESTful APIs and web applications.</p>
+          <a href="https://www.coursera.org/account/accomplishments/verify/82BDU5F6KUYG" class="custom-btn" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- DSA Certificate -->
+    <div class="post col-md-4 certificate all col-10 mt-3 mt-md-0" data-aos="fade-up">
+      <div class="card">
+        <img src="images/udemy.png" class="card-img-top" alt="DSA Certificate" />
+        <div class="card-body text-center">
+          <h4 class="card-title">Data Structures and Algorithms (Udemy)</h4>
+          <!-- <span class="badge bg-secondary badge-pill">Certification</span><br /> -->
+          <p>A certification in Data Structures and Algorithms from Udemy, with deep dive into data structures, algorithms, and solving complex coding problems.</p>
+          <a href="https://www.udemy.com/certificate/UC-f6bcc754-acc2-46c6-8a41-df2752c33130/" class="custom-btn" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+<!-- portfolio section ends here -->
+
+
+
+    
+    
+<!-- contact section starts -->
+<section class="contact py-5" id="contact">
+  <div class="heading text-center">
+    <small>Get in Touch</small>
+    <h3>Any Questions? Feel Free to Contact</h3>
+  </div>
+  <div class="row justify-content-evenly mt-5">
+    <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-geo-alt-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>Raebareli, Uttar Pradesh</p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-telephone-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>+91 7905686898</p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-envelope-fill"></i>
+        </div>
+        <div class="col-11">
+          <a href="mailto:harshitabajpai2288@gmail.com">harshitabajpai228@gmail.com</a>
+        </div>
+        
+      </div>
+      <!-- Added LinkedIn and GitHub links -->
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-linkedin"></i>
+        </div>
+        <div class="col-11">
+          <p><a href="https://www.linkedin.com/in/harshitabajpai1226/" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-github"></i>
+        </div>
+        <div class="col-11">
+          <p><a href="https://github.com/harshitabajpai1" target="_blank">GitHub</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+      <div class="contact-form">
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Name"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="E-mail"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Mobile No."
+          />
+        </div>
+        <div class="mb-3">
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            placeholder="Message"
+            rows="5"
+          ></textarea>
+        </div>
+        <button class="custom-btn" type="submit">
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- contact section ends here -->
+
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-3" style="background-color: #222;">
+      <!-- <h3 class="text-white pt-2 mb-3" data-aos="fade-up" style="font-size: 1.5rem;">Portfolio</h3> -->
+    
+      <div class="link-group d-flex justify-content-center flex-wrap gap-2" data-aos="fade-up">
+        <a href="#home" style="padding: 6px 14px; background-color: #444; color: #fff; border-radius: 16px; text-decoration: none; font-size: 0.9rem;">Home</a>
+        <a href="#about" style="padding: 6px 14px; background-color: #444; color: #fff; border-radius: 16px; text-decoration: none; font-size: 0.9rem;">About</a>
+        <a href="#certificate" style="padding: 6px 14px; background-color: #444; color: #fff; border-radius: 16px; text-decoration: none; font-size: 0.9rem;">Certificates</a>
+        <a href="#portfolio" style="padding: 6px 14px; background-color: #444; color: #fff; border-radius: 16px; text-decoration: none; font-size: 0.9rem;">Projects</a>
+        <a href="#contact" style="padding: 6px 14px; background-color: #444; color: #fff; border-radius: 16px; text-decoration: none; font-size: 0.9rem;">Contact</a>
+      </div>
+    
+      <p class="mt-3 text-white" style="font-size: 0.85rem;">© 2025 Portfolio | All Rights Reserved.</p>
+    </footer>
+    
+    
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+      <script>
+        const navbar = document.getElementById("navbar-top");
+    
+        window.addEventListener("scroll", () => {
+          const scrollTop = window.scrollY;
+          const maxScroll = 300;
+          const opacity = Math.min(scrollTop / maxScroll, 1);
+    
+          const red = 28, green = 28, blue = 28;
+          const backgroundColor = `rgba(${red}, ${green}, ${blue}, ${opacity})`;
+          navbar.style.backgroundColor = backgroundColor;
+    
+          // Optional: change text color too
+          const navLinks = navbar.querySelectorAll(".nav-link, .navbar-brand, .nav-menu");
+          navLinks.forEach(link => {
+            link.style.color = opacity > 0.5 ? "#f8f9fa" : "#3f396d";
+          });
+        });
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+
+    
+    
+  </body>
+</html>
